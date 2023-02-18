@@ -1,1 +1,23 @@
-<p>Sooon</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Number Counter</h1>
+    <p>Click the button to increase the counter:</p>
+    <button id="counter-button">Add 1</button>
+    <p>Counter: <span id="counter">0</span></p>
+
+    <script>
+      const counter = document.getElementById('counter');
+      const counterButton = document.getElementById('counter-button');
+      let count = 0;
+
+      counterButton.addEventListener('click', () => {
+        count++;
+        counter.textContent = count;
+      });
+    </script>
+  </body>
+</html>
