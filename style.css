@@ -20,9 +20,8 @@ h1 {
 
 .button {
   background-color: lightblue;
-  padding: 8px 20px;
+  padding: 10px;
   margin: 10px;
-  width: 120px;
-  height: 40px;
-  font-size: 16px;
+  width: 150px;
+  height: 50px;
 }
