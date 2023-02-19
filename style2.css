@@ -27,7 +27,7 @@ body {
   font-size: 48px;
 }
 
-#counter-button {
+.counter-button {
   background-color: white;
   border: 2px solid black;
   color: black;
@@ -39,7 +39,7 @@ body {
   border-radius: 0;
 }
 
-#counter-button:hover {
+.counter-button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
