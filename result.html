@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Counter Result</title>
+  </head>
+  <body>
+    <h1>Clicks: <span id="counter"></span></h1>
+    <script>
+      var counter = localStorage.getItem("counter");
+      document.getElementById("counter").innerHTML = counter;
+    </script>
+  </body>
+</html>
