@@ -7,3 +7,4 @@ function countClicks() {
     // navigate to another page with the number of clicks as a parameter
     window.location.href = "otherpage.html?clicks=" + clicks;
 }
+
