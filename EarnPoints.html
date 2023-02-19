@@ -5,19 +5,19 @@
     <title>Wild Cat Shop |Earn Points!|</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
     <script>
-        function countClicks() {
-            var clicks = parseInt(getItem('clicks')) || 0;
-            clicks++;
-            localStorage.setItem('clicks', clicks);
-            document.getElementById('clicks').innerHTML = clicks;
-        }
+      var count = 0;
+
+      function increment() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+      }
     </script>
   </head>
   <body>
     <h1>Earn Points!</h1>
     <p>Click the button to Earn Points!:</p>
-    <button onclick="countClicks()" class="counter-button">+1</button>
-    <p><span id="clicks">0</span></p>
+    <button onclick="increment()" class="counter-button">+1</button>
+    <p id="count">0</p>
     <button href="index.html" class="button">Back To Home</button>
   </body>
 </html>
