@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Wild Cat Shop |Earn Points!|</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <script>
-        function countClicks() {
-            var clicks = parseInt(localStorage.getItem('clicks')) || 0;
-            clicks++;
-            localStorage.setItem('clicks', clicks);
-            document.getElementById('clicks').innerHTML = clicks;
-        }
-    </script>
+    <title>Click Counter</title>
   </head>
   <body>
-    <h1>Earn Points!</h1>
-    <p>Click the button to Earn Points!:</p>
-    <button onclick="countClicks()">+1</button>
-    <p><span id="clicks">0</span></p>
+    <button onclick="incrementCounter()">Click me!</button>
+    <script>
+      var counter = 0;
+      function incrementCounter() {
+        counter++;
+        localStorage.setItem("counter", counter);
+        window.location.href = "result.html";
+      }
+    </script>
+    <a href="result.html">View Result</a>
   </body>
 </html>
