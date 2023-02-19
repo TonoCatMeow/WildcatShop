@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Other Page</title>
+	<script>
+		var urlParams = new URLSearchParams(window.location.search);
+		var clicks = urlParams.get('clicks');
+
+		document.getElementById('points').innerHTML = clicks;
+	</script>
+</head>
+<body>
+	<p>You have earned <span id="points">0</span> points.</p>
+</body>
+</html>
