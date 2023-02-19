@@ -12,12 +12,17 @@
         document.getElementById("count").innerHTML = count;
       }
     </script>
+    <script>
+      function goToHomePage() {
+      window.location.href = "index.html";
+    }
+   </script>
   </head>
   <body>
     <h1>Earn Points!</h1>
     <p>Click the button to Earn Points!:</p>
     <button onclick="increment()" class="counter-button">+1</button>
     <p id="count">0</p>
-    <button href="index.html" class="button">Back To Home</button>
+    <button class="button" onclick="goToHomePage()">Back To Home</button>
   </body>
 </html>
