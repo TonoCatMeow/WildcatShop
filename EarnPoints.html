@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style2.css">
     <script>
         function countClicks() {
-            var clicks = parseInt(localStorage.getItem('clicks')) || 0;
+            var clicks = parseInt(getItem('clicks')) || 0;
             clicks++;
             localStorage.setItem('clicks', clicks);
             document.getElementById('clicks').innerHTML = clicks;
