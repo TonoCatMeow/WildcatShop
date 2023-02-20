@@ -68,3 +68,16 @@ h1 {
   height: 50px;
   border-radius: 10px;
 }
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+}
+
