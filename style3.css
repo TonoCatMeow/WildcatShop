@@ -30,3 +30,40 @@ p {
   margin-top: 10px;
   color: #ddd; /* change the text color to a light gray for better contrast */
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 
+    1.5px 1.5px 0 #000, 
+    -1.5px 1.5px 0 #000, 
+    1.5px -1.5px 0 #000, 
+    -1.5px -1.5px 0 #000;
+}
+
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  background-color: #0096FF;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+}
